@@ -5,6 +5,7 @@ const morgan = require('morgan')
 require('dotenv').config()
 const connectDB = require('./connect')
 const users = require('./routes/users')
+const auth = require('./routes/auth')
 
 connectDB(process.env.MONGO_URI)
 
